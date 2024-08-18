@@ -1,0 +1,107 @@
+﻿{"frames": {
+
+"box00000":
+{
+	"frame": {"x":0,"y":0,"w":114,"h":129},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":114,"h":129},
+	"sourceSize": {"w":114,"h":129}
+},
+"box10000":
+{
+	"frame": {"x":114,"y":0,"w":114,"h":129},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":114,"h":129},
+	"sourceSize": {"w":114,"h":129}
+},
+"box20000":
+{
+	"frame": {"x":228,"y":0,"w":114,"h":129},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":114,"h":129},
+	"sourceSize": {"w":114,"h":129}
+},
+"box30000":
+{
+	"frame": {"x":342,"y":0,"w":114,"h":129},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":114,"h":129},
+	"sourceSize": {"w":114,"h":129}
+},
+"box40000":
+{
+	"frame": {"x":456,"y":0,"w":115,"h":129},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":115,"h":129},
+	"sourceSize": {"w":115,"h":129}
+},
+"magic00000":
+{
+	"frame": {"x":571,"y":0,"w":154,"h":149},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":149},
+	"sourceSize": {"w":154,"h":149}
+},
+"magic10000":
+{
+	"frame": {"x":725,"y":0,"w":155,"h":149},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":155,"h":149},
+	"sourceSize": {"w":155,"h":149}
+},
+"menu0000":
+{
+	"frame": {"x":0,"y":149,"w":355,"h":123},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":355,"h":123},
+	"sourceSize": {"w":355,"h":123}
+},
+"moves0000":
+{
+	"frame": {"x":355,"y":149,"w":327,"h":201},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":327,"h":201},
+	"sourceSize": {"w":327,"h":201}
+},
+"score_panel0000":
+{
+	"frame": {"x":682,"y":149,"w":327,"h":159},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":327,"h":159},
+	"sourceSize": {"w":327,"h":159}
+},
+"start0000":
+{
+	"frame": {"x":0,"y":350,"w":355,"h":123},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":355,"h":123},
+	"sourceSize": {"w":355,"h":123}
+},
+"window0000":
+{
+	"frame": {"x":355,"y":350,"w":90,"h":384},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":90,"h":384},
+	"sourceSize": {"w":90,"h":384}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "24.0.0.305",
+	"image": "gui.png",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":1024},
+	"scale": "1"
+}
+}

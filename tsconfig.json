@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "ES2015",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "allowUnreachableCode": false,
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "strictPropertyInitialization": false,
+    "moduleResolution": "node",
+    "lib": [
+      "dom",
+      "esnext"
+    ]
+  },
+  "include": [
+    "src/**/*",
+    "typings/global.d.ts",
+    "typings/level.d.ts",
+    "typings/data.d.ts",
+    "typings/social.d.ts",
+    "typings/custom.d.ts",
+    "phaser/types/SpinePlugin"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}

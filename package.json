@@ -1,0 +1,65 @@
+{
+  "name": "blast",
+  "version": "3.80",
+  "description": "Blast project",
+  "homepage": "https://github.com/yandeu/phaser-project-template#readme",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --config webpack/webpack.dev.js",
+    "build": "rimraf dist && webpack --config webpack/webpack.prod.js",
+    "bundle": "npm run build",
+    "serve": "serve dist",
+    "format": "prettier --check src/scripts/**",
+    "format:write": "prettier --write src/scripts/**"
+  },
+  "keywords": [
+    "Phaser",
+    "Phaser 3",
+    "Phaser3",
+    "html5 game",
+    "TypeScript",
+    "webpack",
+    "starter"
+  ],
+  "author": {
+    "name": "Denis Lebedev",
+    "url": "https://github.com/y"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/"
+  },
+  "template": {
+    "name": "phaser-project-template",
+    "url": "https://github.com/",
+    "author": "Denis Lebedev"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@vkontakte/vk-bridge": "^2.14.1",
+    "phaser": "^3.80.1",
+    "phaser3-rex-plugins": "^1.80.2",
+    "phaser3-rex-plugins-types": "^0.2.0",
+    "querystring-es3": "^0.2.1"
+  },
+  "devDependencies": {
+    "@yandeu/prettier-config": "^0.0.3",
+    "copy-webpack-plugin": "^10.2.4",
+    "html-webpack-plugin": "^5.6.0",
+    "javascript-obfuscator": "^4.1.0",
+    "prettier": "^2.8.8",
+    "rimraf": "^3.0.2",
+    "serve": "^14.2.1",
+    "ts-loader": "^9.5.1",
+    "typescript": "^4.9.5",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.15.2",
+    "webpack-merge": "^5.10.0",
+    "webpack-obfuscator": "^3.5.1",
+    "workbox-webpack-plugin": "^6.6.0"
+  }
+}
