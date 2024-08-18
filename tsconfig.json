@@ -20,7 +20,6 @@
   "include": [
     "src/**/*",
     "typings/global.d.ts",
-    "typings/level.d.ts",
     "typings/data.d.ts",
     "typings/social.d.ts",
     "typings/custom.d.ts",
