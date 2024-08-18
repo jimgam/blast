@@ -5,14 +5,14 @@ export class ScoreManager extends Phaser.Events.EventEmitter {
     private maxScore: number;
 
     constructor(maxScore: number) {
-        super(); // Вызов конструктора родительского класса
+        super(); 
         this.score = 0;
         this.maxScore = maxScore;
     }
 
     addScore(points: number) {
         this.score += points;
-        this.emit('scoreChanged', this.score); // Извещение об изменении счёта
+        this.emit('scoreChanged', this.score); 
     }
 
     getScore() { return this.score }
@@ -21,7 +21,7 @@ export class ScoreManager extends Phaser.Events.EventEmitter {
 
     resetScore() {
         this.score = 0;
-        this.emit('scoreChanged', this.score); // Извещение об изменении счёта
+        this.emit('scoreChanged', this.score); 
     }
 }
 
@@ -83,32 +83,6 @@ export class ScoreView extends Phaser.GameObjects.Container {
             repeat: 0
         });
     }
-
-    // destroy(fromScene?: boolean): void {
-    //     super.destroy()
-    //     this.scoreManager.off('scoreChanged', this.update.bind(this));
-    // }
 }
 
 
-// export class ScoreView {
-//     private scoreText: Phaser.GameObjects.Text;
-//     private postfix: string = ' очков';
-//     private scoreManager: ScoreManager;
-//     private maxScoreText: Phaser.GameObjects.Text;
-//     private bg: Phaser.GameObjects.Sprite;
-
-//     constructor(scene: Phaser.Scene, scoreManager: ScoreManager) {
-//         this.scoreManager = scoreManager
-
-//         this.bg = scene.add.sprite(0, 0, 'gui', 'score_panel' + '0000')
-//         this.scoreText = scene.add.text(0, 0, `${0}${this.postfix} / ${scoreManager.getMaxScore()}`)
-//         this.maxScoreText = scene.add.text(0, 0, `${0}${this.postfix} / ${scoreManager.getMaxScore()}`)
-
-//         scoreManager.on('scoreChanged', this.update.bind(this)); // Подписка на событие
-//     }
-
-//     update(newScore: number) {
-//         this.scoreText.setText(newScore.toString() + `${this.postfix} / ${this.scoreManager.getMaxScore()}`);
-//     }
-// }

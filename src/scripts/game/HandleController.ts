@@ -6,11 +6,11 @@ import BoardView from './Board/View/BoardView';
 export class HandleController {
     scene: GameScene;
     private clickCallback: (col: number, row: number) => void;
-    private cursorMoveCallback: (col: number, row: number) => void; // New callback for cursor movement
+    private cursorMoveCallback: (col: number, row: number) => void;
     private startX: number;
     private startY: number;
     private tileSize: number;
-    private board: any; // Replace with the actual type of your board
+    private board: any; 
 
     constructor(scene: GameScene, board: Board, boardView: BoardView) {
         this.scene = scene;
@@ -18,8 +18,8 @@ export class HandleController {
         this.startX = boardView.getBoard().x;
         this.startY = boardView.getBoard().y;
         this.tileSize = boardView.getTileSize();
-        this.clickCallback = () => { }; // Default to a no-op function
-        this.cursorMoveCallback = () => { }; // Default to a no-op function
+        this.clickCallback = () => { }; 
+        this.cursorMoveCallback = () => { }; 
     }
 
     public onTileClick(callback: (col: number, row: number) => void): void {

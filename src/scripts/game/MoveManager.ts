@@ -5,13 +5,13 @@ export class MoveManager extends Phaser.Events.EventEmitter {
     private move: number;
 
     constructor(maxMove: number) {
-        super(); // Вызов конструктора родительского класса
+        super(); 
         this.move = maxMove;
     }
 
     madeMove() {
         this.move -= 1;
-        this.emit('moved', this.move); // Извещение об изменении счёта
+        this.emit('moved', this.move); 
     }
 
     hasMoreMoves() { return this.move > 0 }

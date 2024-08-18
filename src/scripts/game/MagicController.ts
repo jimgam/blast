@@ -43,12 +43,12 @@ export class MagicController {
 
     toggleSelection(value: number, button: SimpleButton) {
         if (this.selected === value) {
-            this.selected = 0; // Unselect if already selected
-            button.unselect(); // Unselect the button
+            this.selected = 0; 
+            button.unselect(); 
         } else {
-            this.selected = value; // Select the new value
-            button.select(); // Select the button
-            // If there's another button selected, unselect it
+            this.selected = value; 
+            button.select(); 
+           
             if (button === this.button0 && this.button1.isSelected) {
                 this.button1.unselect();
             } else if (button === this.button1 && this.button0.isSelected) {
@@ -63,8 +63,8 @@ export class MagicController {
 
     resetSelected() {
         this.swapTile = []
-        this.selected = 0; // Resets selected to 0
-        this.button0.unselect(); // Unselect button 0
-        this.button1.unselect(); // Unselect button 1
+        this.selected = 0; 
+        this.button0.unselect(); 
+        this.button1.unselect();
     }
 }
