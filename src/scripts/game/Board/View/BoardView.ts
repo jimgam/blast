@@ -52,11 +52,10 @@ export default class BoardView {
                 const posX = this.startX + tile.getPos().col * this.tileSize;
                 const posY = this.startY + tile.getPos().row * this.tileSize;
 
-                const tileView = this.createTileView(posX, posY, tile, this.tileSize)// new TileView(this.scene, posX, posY, tile, this.tileSize);
+                const tileView = this.createTileView(posX, posY, tile, this.tileSize)
                 this.tiles[y][x] = tileView;
             }
         }
-        // console.log('ТАЙЛЫ СОЗДАНЫ');
         this.sortTile()
     }
 

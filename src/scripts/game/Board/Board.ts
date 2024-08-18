@@ -1,8 +1,7 @@
 import { GameConfig } from "../GameConfig";
 import Tile from "./Tile";
 
-// Реализация игрового поля
-export default class Board  {
+export default class Board {
     private tiles: (ITile)[][];
     private rows: number;
     private cols: number;
@@ -14,13 +13,12 @@ export default class Board  {
         this.tiles = this.generateRandomBoard();
     }
 
-    // Public Methods
-    public getBoardSize() { 
-        return { rows: this.rows, cols: this.cols }; 
+    public getBoardSize() {
+        return { rows: this.rows, cols: this.cols };
     }
 
-    public getTile(col: number, row: number): ITile { 
-        return this.tiles[row][col]; 
+    public getTile(col: number, row: number): ITile {
+        return this.tiles[row][col];
     }
 
     public getBoard() {
@@ -61,28 +59,26 @@ export default class Board  {
             if (newRow >= 0 && newRow < this.rows && newCol >= 0 && newCol < this.cols) {
                 const tile = this.tiles[newRow][newCol];
                 if (tile) {
-                    tile.type = 'none'; 
-                    burnTiles.push(tile); 
+                    tile.type = 'none';
+                    burnTiles.push(tile);
                 }
             }
         }
 
-        return burnTiles; // Return the array of burned tiles
+        return burnTiles;
     }
 
     public swapTile(col1: number, row1: number, col2: number, row2: number): ITile[] | null {
         if (!this.isValidPosition(col1, row1) || !this.isValidPosition(col2, row2)) {
-            return null; // Return null if positions are invalid
+            return null;
         }
 
         const tile1 = this.getTile(col1, row1);
         const tile2 = this.getTile(col2, row2);
 
-        // Swap the tiles
         this.tiles[row1][col1] = tile2;
         this.tiles[row2][col2] = tile1;
 
-        // Update the positions of the swapped tiles
         tile1.setPos(row2, col2);
         tile2.setPos(row1, col1);
 
@@ -117,14 +113,12 @@ export default class Board  {
         for (let col = 0; col < this.cols; col++) {
             let emptySpaces = 0;
 
-            // Подсчитываем количество пустых мест в столбце
             for (let row = this.rows - 1; row >= 0; row--) {
                 if (this.tiles[row][col].type === "none") {
                     emptySpaces++;
                 }
             }
 
-            // Заполняем пустые места новыми тайлами
             for (let i = 0; i < emptySpaces; i++) {
                 const row = i;
                 const color = Math.floor(Math.random() * GameConfig.COLORS);
@@ -164,7 +158,6 @@ export default class Board  {
         return false;
     }
 
-    // Private Methods
     private isValidPosition(col: number, row: number): boolean {
         return col >= 0 && col < this.cols && row >= 0 && row < this.rows;
     }
@@ -198,7 +191,5 @@ export default class Board  {
         return board;
     }
 
-    private shuffle(): void {
-        // Implementation for shuffle if needed
-    }
+    private shuffle(): void { }
 }

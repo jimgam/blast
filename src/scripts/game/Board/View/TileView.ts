@@ -20,19 +20,9 @@ export class TileView extends Container {
 
         this.sprite = this.scene.add.sprite(0, 0, 'gui', `box${tile.color}0000`)
             .setDisplaySize(tileSize, tileSize + tileSize / 10)
-        // .setDepth(DepthLayer.LAYER - posY / 100)
-
-        // this.text = this.scene.add.text(0, 0, `${tile.color}`)
-        //     // .setDepth(DepthLayer.LAYER - posY / 100)
-        //     .setVisible(false)
-
-
 
         this.add(this.sprite);
         this.setPosition(posX, posY)
-        // this.setDepth(DepthLayer.LAYER + posY / 100)
-
-        // this.addStaticAnimationSprite()
     }
 
     addStaticAnimationSprite() {
@@ -61,8 +51,6 @@ export class TileView extends Container {
                     new fxParticlesBase(this.scene, this.posX, this.posY, fx_Particle_Block, 500)
                 },
                 onComplete: () => {
-                    // this.sprite.setVisible(false);
-                    // this.text.setText('none')
                     this.destroy()
                     resolve();
                 }
@@ -140,12 +128,6 @@ export class TileView extends Container {
 
 
     public async playScaleAnimation(scale: number, duration: number): Promise<void> {
-
-        // this.sprite = this.scene.add.sprite(this.posX, this.posY, 'gui', `box${this.tile.color}0000`)
-        //     .setDisplaySize(this.tileSize, this.tileSize + this.tileSize / 10)
-        //     .setBlendMode('ADD')
-
-
         return new Promise<void>((resolve) => {
             const shakeTween = this.scene.tweens.add({
                 targets: this,
